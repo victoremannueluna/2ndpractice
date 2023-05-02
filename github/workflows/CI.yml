@@ -1,16 +1,16 @@
 name: CI
 
 on: 
-	push: 
-		branches: [ "main" ]
+  push: 
+    branches: [ "main" ]
   pull_request: 		
     branches: [ "main" ]
   
   workflow_dispatch:
   
 jobs: 
-	CI: 
-		runs-on: ubuntu_latest
+  CI: 
+    runs-on: ubuntu_latest
       
     steps:
       
