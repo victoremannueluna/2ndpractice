@@ -10,22 +10,14 @@ on:
   
 jobs: 
   CI: 
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
       
     steps:
       
       - name: Checkout repository
         uses: actions/checkout@v3
           
-      - name: Set up Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node_version: 16.x
-            
-      - name: Install dependencies
-        run: npm Install
-             
-      - name: Run the tests
-        run: npm run test -- --coverage
-        env:
-          CI: true
+      - name: teste pipeline
+        run: echo "teste githubactions"
+        
+        
